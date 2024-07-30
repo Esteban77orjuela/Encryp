@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="encry.css" />
+    <title>Encriptador y Desencriptador de Textos</title>
+  </head>
+  <body>
+    <header>
+      <img src="img/LOGO.jpg" alt="Logo" id="logo" />
+    </header>
+
+    <main class="container">
+      <section class="input-section">
+        <textarea
+          class="texto entrada-texto"
+          id="input-text"
+          placeholder="Ingrese el texto aquí..."
+          aria-label="Área de texto para ingresar el texto"
+        ></textarea>
+        <p class="note">Solo letras minúsculas y sin acento</p>
+        <div class="buttons">
+          <button class="btn encriptar-btn" id="encrypt-button">
+            Encriptar
+          </button>
+          <button class="btn desencriptar-btn" id="decrypt-button">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+
+      <section class="output-section">
+        <textarea
+          class="texto salida-texto"
+          id="output-text"
+          placeholder="Texto encriptado/desencriptado aparecerá aquí"
+          readonly
+          aria-label="Área de texto para mostrar el texto encriptado o desencriptado"
+        ></textarea>
+      </section>
+    </main>
+
+    <script src="encry.js"></script>
+  </body>
+</html>
